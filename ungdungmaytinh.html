@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>ung dung may tinh</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="number"name=""value=""id="oso1"/> <input type="number"name=""value=""id="oso2"/></br>
+
+  <td><button type="button"onclick="cong()">Addition(+)</button></td>
+  <td><button type="button"onclick="tru()">Subtraction(-)</button></td>
+  <td><button type="button"onclick="nhan()">Multiplication(*)</button></td>
+  <td><button type="button"onclick="chia()">Division(/)</button></td>
+
+<p id="result">Kết quả là  : </p>
+<script>
+
+  function cong() {
+    let so1=+document.getElementById("oso1").value;
+    let so2=+document.getElementById("oso2").value;
+    document.getElementById("result").innerHTML +=so2+so1;
+
+  } function chia() {
+    let so1=+document.getElementById("oso1").value;
+    let so2=+document.getElementById("oso2").value;
+    document.getElementById("result").innerHTML +=so1/so2;
+
+  } function tru() {
+    let so1=+document.getElementById("oso1").value;
+    let so2=+document.getElementById("oso2").value;
+    document.getElementById("result").innerHTML +=so1-so2;
+
+  } function nhan() {
+    let so1=+document.getElementById("oso1").value;
+    let so2=+document.getElementById("oso2").value;
+    document.getElementById("result").innerHTML +=so2*so1;
+
+  }
+
+</script>
+</body>
+</html>
